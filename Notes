@@ -1,0 +1,18 @@
+aplikasi jalan di worker node
+sistem kubernetes jalan di control plane
+
+1 pod per aplikasi
+setiap pod merupakan server tersendiri
+
+
+menjamin no downtime (HA)
+scale jumlah container (scalability)
+backup/restore (disaster recovery)
+
+control plane mengontrol 1 buah worker node atau lebih
+
+tiap node bisa dalam bentuk virtual server, virtual machine
+
+tiap worker node ada aplikasi yang jalan
+
+didalam worker node ada agen (kubelet) untuk komunikasi sama control plane
